@@ -1,21 +1,15 @@
 <?xml version="1.0" ?>
 <rss version="2.0">
 <channel>
-  <title>Vitalik Buterin's website</title>
-  <link>https://vitalik.ca/</link>
-  <description>Vitalik Buterin's website</description>
-  <image>
-      <url>http://vitalik.ca/images/icon.png</url>
-      <title>Vitalik Buterin's website</title>
-      <link>https://vitalik.ca/</link>
-  </image>
-
-<item>
-<title>Scaling Ethereum L1 and L2s in 2025 and beyond</title>
+  <title>Eric Bidopa's website</title>
+  <link>https://ericbidopa.com/</link>
+  <description>Eric Bidopa's website</description>
+<!-- <item>
+<title>Magical Products With God-Complex</title>
 <link>https://vitalik.ca/general/2025/01/23/l1l2future.html</link>
 <guid>https://vitalik.ca/general/2025/01/23/l1l2future.html</guid>
 <pubDate>Thu, 23 Jan 2025 00:00:00 +0000</pubDate>
 <description></description>
-</item>
+</item> -->
 </channel>
 </rss>
