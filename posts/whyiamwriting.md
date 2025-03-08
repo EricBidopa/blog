@@ -1,6 +1,6 @@
 ## **Why I Decided to Start Writing**
 
-I have always had a lot to say about many things. Most of the time, I prefer to conserve my energy, be lazy, and just keep it in. I wouldn't dare risk saying things with words that are not spot on. I would rather not say anything at all.
+I have always had a lot to say about many things. Most of the time, I prefer to conserve my energy, be lazy, and just keep it in. I wouldn't dare risk saying things with words that are immaculate. I would rather not say anything at all.
 
 The times that I have explained things with the perfect words, I have felt truly good and confident. I loved that feeling. And in those moments, I wished I could do it more. But I don't.
 
