@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8" />
+  <style>
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #1c1c1c;
+        color: white;
+      }
+      .markdown-body table tr {
+        background-color: #1c1c1c;
+      }
+      .markdown-body table tr:nth-child(2n) {
+        background-color: black;
+      }
+    }
+  </style>
+
+  <link
+    rel="alternate"
+    type="application/rss+xml"
+    href="../../../../feed.xml"
+    title="The promise and challenges of crypto + AI applications"
+  />
+
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="../../../../css/common-vendor.b8ecfc406ac0b5f77a26.css"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="../../../../css/fretboard.f32f2a8d5293869f0195.css"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="../../../../css/pretty.0ae3265014f89d9850bf.css"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="../../../../css/pretty-vendor.83ac49e057c3eac4fce3.css"
+  />
+  <link rel="stylesheet" type="text/css" href="../../../../css/global.css" />
+  <link rel="stylesheet" type="text/css" href="../../../../css/misc.css" />
+
+  <script type="text/x-mathjax-config">
+    <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\(', '\)']]
+      },
+      svg: {
+        fontCache: 'global',
+      }
+    };
+  </script>
+  <script
+    type="text/javascript"
+    id="MathJax-script"
+    async
+    src="../../../../scripts/tex-svg.js"
+  ></script>
+
+  <style></style>
+
+  <div
+    id="doc"
+    class="container-fluid markdown-body comment-enabled"
+    data-hard-breaks="true"
+  >
+    <div id="color-mode-switch">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+        />
+      </svg>
+      <input type="checkbox" id="switch" />
+      <label for="switch">Dark Mode Toggle</label>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+        />
+      </svg>
+    </div>
+
+    <script type="text/javascript">
+      // Update root html class to set CSS colors
+      const toggleDarkMode = () => {
+        const root = document.querySelector("html");
+        root.classList.toggle("dark");
+      };
+
+      // Update local storage value for colorScheme
+      const toggleColorScheme = () => {
+        const colorScheme = localStorage.getItem("colorScheme");
+        if (colorScheme === "light")
+          localStorage.setItem("colorScheme", "dark");
+        else localStorage.setItem("colorScheme", "light");
+      };
+
+      // Set toggle input handler
+      const toggle = document.querySelector(
+        '#color-mode-switch input[type="checkbox"]'
+      );
+      if (toggle)
+        toggle.onclick = () => {
+          toggleDarkMode();
+          toggleColorScheme();
+        };
+
+      // Check for color scheme on init
+      const checkColorScheme = () => {
+        const colorScheme = localStorage.getItem("colorScheme");
+        // Default to light for first view
+        if (colorScheme === null || colorScheme === undefined)
+          localStorage.setItem("colorScheme", "light");
+        // If previously saved to dark, toggle switch and update colors
+        if (colorScheme === "dark") {
+          toggle.checked = true;
+          toggleDarkMode();
+        }
+      };
+      checkColorScheme();
+    </script>
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Human Race" />
+
+    <br />
+    <h1 style="margin-bottom: 7px">130325</h1>
+    <small style="float: left; color: #888"> 2025 March 13</small>
+    <small style="float: right; color: #888"
+      ><a href="../../../../index.html">See all posts</a></small
+    >
+    <br />
+    <br />
+    <br />
+    <p>
+      Today was a bad day. Maybe I am being too dramatic? Well, how else do you
+      explain waking up in the middle of the night with your heart beating
+      abnormally fast and having to push a motorbike for at least 10 kilometers
+      to close the day?
+    </p>
+    <p>
+      Tough one. as usual, I wake up with a lot on my to-do list, carpe diem,
+      you'd say. We are still in the early stages of building NextGenHub, so the
+      groundwork just keeps coming. We are making arrangements to commence a
+      financial literacy workshop for kids, aimed at teaching kids to save,
+      spend, budget, invest, you know, those fun stuff we didn't have the
+      opportunity to learn when we were their age.
+    </p>
+    <p>
+      Containers. I had to get 18 of them so we could have ‘save’, ‘spend’, and
+      ‘give’ stickers on them as part of the materials needed for the workshop.
+    </p>
+    <p>
+      Tote Bags. I had ordered days ago and the manufacturer said I would get
+      all ordered items on Thursday (although, I must admit, I wasn't entirely
+      convinced they meant it). Thursday is today, so I called them. They told
+      me they remember telling me it would be delivered on Friday, instead of
+      Thursday. Spent the next minutes showing the proof it was Thursday they
+      said. But to no avail. I had to accept to get the bags on friday rather.
+      This was when I felt the day starting to really frown at me.
+    </p>
+    <p>
+      Time to get the aforementioned save, give, spend Containers. That morning,
+      trying to figure out where I would get the container, I remember I passed
+      by a not so welcoming store selling them in packs. It is perfect, I
+      thought. Rode there and made the transaction. To my surprise, the
+      so-called new containers looked mildly new. Had what looked like scratches
+      all over them. At first, I thought it would be fine, and it was just dust
+      and the seller assured me I was right, it was just dust. Bought 18 of it.
+      He sat there cleaning the containers and bagging them for me. Some had
+      bumps, I didn't think much of it. I can just push them with my fingers and
+      they would be fine. A side of me was just glad I didn't have to go through
+      chaos, to randomly find someone that sold the containers. I remember
+      classhing eyes with him as he was cleaning the containers and he appeared
+      slightly startled. That was my clue. I should have just left then. But I
+      didn't want to be that guy. I couldn't afford that emotionally burst. I
+      wanted to just be nice and pay him, even when I had doubts about what I
+      was buying and wished I could just disappear without a trace. Got the
+      containers. 18 of them. Got home, sprayed some oil on them and started
+      cleaning, hoping that I could rub all those scratches away. They proved
+      rather stubborn. I had wasted money. Or maybe not, I thought to myself.
+      Maybe I can just keep them in my room and store things in them in an
+      effort to keep things organized. I liked the idea and It managed to take
+      away the regret. Had to buy another 18 containers from another store, they
+      were more expensive, but you know what they say, "buy expensive, buy once,
+      but cheap, buy twice". I remember I didn't really like the design.
+      Preferred them to be entirely smooth. But these ones had some curves at
+      the base. Bought them anyways. Enough pain for the day. A lot more left to
+      be done.
+    </p>
+    <p>
+      Rode to my co-founder's house, gave them the containers and tried to cheer
+      them up. This was around 5pm. I Taught her kids some coding and wasn't
+      able to finish what I had planned to teach because their mouse had a low
+      battery and the other's keyboard was also low. What is it with the 21st
+      century and making things overly complicated than they need to be? What is
+      the whole point of making a mouse wireless? Aside from looking fancy, it
+      has no valid use case. Is it for easier controls when you are far from the
+      computer? well, how would you see the screen with the tiny pointer if you
+      are far anyways? I don't get why things are so messy than they need to be.
+      Let's learn to keep things simple and actually make things that meet real
+      problems. Not in the shallow shadows of modernism.
+    </p>
+    <p>
+      Anyways, I am ranting about this, because it got me irritated. I had told
+      their mum, My co-founder, a couple of days before, that they should just
+      change the mouse and buy one with wire so we don't have to be charging
+      every time. She didn't agree and said I should just call one of the
+      nannies to charge it every day before I come over for class. MADE SENSE.
+      But then again, I thought, why does she have to do that when the mouse can
+      just be replaced? Also, with the keyboard, one of the kids uses a windows
+      keyboard for the MACOS desktop. I spent 10 minutes trying to figure out
+      where the damn command key was so I could undo a coding typo I had made.
+      Got even more frustrated. Their Mom (my cofounder) also got frustrated.
+      They argued that I should have just called the nanny for them to charge
+      the devices, and that I am only saying they should change the mouse
+      because I want things my way and that this is modern technology and I
+      should work with it. Some of what she said was right. I don't see the need
+      to change things when they work just right enough. We had a flash
+      exchange. No regretful words were shared. Thank goodness. I am glad to be
+      writing about it now. Although she made an assumption again for the 3rd
+      time as I have been keeping track of her patterns. And I plan to confront
+      her with it at the right time in future. The right time always comes when
+      you are patient enough.
+    </p>
+    <p>
+      I was frustrated, kept quiet and walked to my laptop to continue work on
+      the NextGenHub mobile App. The conflict lasted with me for about 90% of
+      the time I spent at her house. Although, for her, the minute I walked
+      away, she had just moved on, almost forgotten about it and even approached
+      me to share the newly discovered goodnews with so much excitement in her
+      eyes. haha. You gotta love her.
+    </p>
+    <p>
+      The Worst and Good Part. It was about 8:17pm as I remember checking the
+      time. It has started raining immensely. You could tell by the burst of
+      rain-sound you heard from the study room. I just plugged in my earpiece
+      and continued to code, hoping the rain would finish it's thing soon enough
+      for me to ride back home. It did. Or at least it appeared so. It felt
+      quite outside, so I thought the rain had packed up. Announced to my
+      cofounder that I was leaving and so I left. Got outside and noticed that
+      the rain wasn't entirely over. Didn't also want to be the guy that says
+      he's leaving and you still find him in the house.
+    </p>
+    <p>
+      "How bad could it be?", I thought. Took a step, and another, and then
+      another and I was with my bike. Cleaned all rain droplets off it and ready
+      to ride the wind.
+    </p>
+    <p>
+      Rode out and the rain didn't take it easy on me. I could barely see the
+      road. Riding is mostly fun at these times, rain hitting you from all
+      angles, your eyes almost blind and your entire body shaking on the bike.
+      In that moment, just for a little while, we get to touch the face of God.
+    </p>
+    <p>
+      Got to a curve, and realized there was traffic. a bridge had flooded the
+      entire road and some cars were stuck. I decided to take another path and
+      warned another biker behind me to also turn around. Got to the path I had
+      in mind. Also flooded. Decided to try another. This new path was better.
+      Traffic light had turned red so I had to take a halt. I had to cross to
+      the other side of the road to head home. The biker I had warned earlier
+      was also beside me, heading the same direction as me. Saw another flood
+      ahead, just ahead of me. I had to cross it to get home. At most, in a
+      split second, I had thought of another route to use, although it is much
+      longer. I was in the spirit. I asked the biker if he was going to ride
+      through the flood or not and he assured me with no uncertainty that he was
+      going to cross it. I heard another biker parked on the side of the road
+      and telling us his engine had shut off trying to ride through the flood,
+      or another biker experienced that rather? Couldn’t be so sure. Didn't want
+      to ask too. I can ride through the flood, I thought. This could be fun.
+      What could possibly at all go wrong?
+    </p>
+    <p>
+      Traffic lights turn green. Vehicles in my lane started moving. I also
+      started moving.
+    </p>
+    <p>
+      Went through the flood. Felt a bit shaky and unbalanced when I was about
+      80% through. 100%. I went through! short span of excitement. The Engine
+      shut off. The bike didn't want to start. Meanwhile, I was a long way from
+      my house and pushing this bike would be a nightmare. Maybe, I need to give
+      it some time and ignite again, I thought. Every effort proved fruitless. I
+      was also on a hill. I had to push it up. and that was just 1 of about 5
+      straight roads each being about 2km long before I can get home.
+    </p>
+    <p>
+      The Nightmare started. It was painful. A lot of pain. I could feel my
+      heart falling out when I was pushing the bike uphill in the middle of
+      nowhere and in the middle of the night. Oh dear, so much pain. Not to talk
+      of fear. Hey, I have an iphone 14 pro on me and some cash. What are the
+      odds of me getting robbed?
+    </p>
+    <p>
+      First hill done. A lot more to go. I dare not calculate the amount of time
+      it's going to take me to get home. All I was focused on was one step in
+      front of the other. Times when you'd prefer not to raise up your head and
+      see the light at the end of the tunnel. Lest, you rationalize that it is
+      impossible to get there. It was too late in the night, All my tow guys
+      were unavailable.
+    </p>
+    <p>
+      Good things started happening. Or so I thought. After the first hill, I
+      was still pushing, getting ready to go on the next. Then suddenly, another
+      biker stopped by. He opted to give me a push with his left leg from the
+      back so at least i don't have to keep enduring the pain of pushing it
+      myself. He wasn't the only biker that passed. He was the only one that
+      passed and stopped to help. What was even more staggering was that he had
+      one passenger on his back seat and still offered to help. I was
+      dumbfounded. Didn't know what to say. Besides, I of course also didn't
+      know if I could trust him. He just shouted that he should tow me and that
+      he knows a mechanic around that I could go see.
+    </p>
+    <p>
+      I sat, he pulled his leg to the front and started the push. The first feel
+      of freedom again after a lot of pain that I didn't think was ever going to
+      end. Cool breeze on my face and just like that, life was good again.
+      Although still filled with a bit of anxiety that a stranger was towing me
+      towards a direction that I had never navigated before. But hey! I knew the
+      risks, and I was ready to face the consequences should things go south.
+    </p>
+    <p>
+      I must say, it wasn't a smooth one, the towing. Because it had rained, the
+      road was more slippery and had a lot of mess. My Jeans were dirty and my
+      lips were dry. It was a discomforting feeling. But above all, more of the
+      discomfort ensued from knowing the stress that the biker was going through
+      to tow me.
+    </p>
+    <p>
+      We finally got to the said residence of the mechanic. Down in the middle
+      of nowhere and smokers all around. He asked a friend to call someone
+      called "Agosho" and just like that, he took off without asking for even a
+      penny from me and he didn't even tell me his name. There I was trying to
+      rationalize him going through all the stress to tow me, even with another
+      passenger at his back just out of good will and leaving right afterwards.
+    </p>
+    <p>
+      After some wait, Agosho came around. Just at first glance at the bike, he
+      told me, there is nothing wrong with it and all I needed was for it to dry
+      out before it would spark up again. Some of his friends suggested that I
+      leave the bike at their place if my house is far away so that I could come
+      for it the next day. My house was far alright. But I wasn't about to push
+      my luck and leave the bike in the hands of another set of strangers for 8
+      good hours. I told them, it was fine and that I will push it home just
+      like I was doing before I was towed.
+    </p>
+    <p>
+      I resumed the push. The push Was pretty alright this time. The Road was
+      not much of a hill. Although it was still painful. I suppose, my brain had
+      made peace with its fate. Up we go again. Unlike before when I wasn't
+      quite sure if I had to see a mechanic or not. This time, I knew, I had to
+      get home, park the bike and dry it out.
+    </p>
+    <p>
+      After about 30 mins, pushing the bike, another biker stopped by. This
+      time, we had a yango delivery bag at the back which screamed that he was a
+      dispatch rider going to deliver a package to a customer. He stopped by me
+      and like the other good human, he also opted to tow me. Again, he wasn't
+      the only rider that passed by, a lot of trucks even passed by that I tried
+      to ask for help. But he was the only one that stopped. Atop the fact that
+      he was a delivery rider and had to deliver a package in time. He didn't
+      care. He just helped out of good will. He asked where my house was, told
+      him and he wasn't even going in the same direction. Yet, he still towed
+      me.
+    </p>
+    <p>When it's all said and done:</p>
+    <p>
+      He took me through all the hills and got me to the only one way road
+      leading to my house which was also the most perfect slope. Thanked him a
+      lot, asked for his number and he said he didn't have a personal phone and
+      the one he had was the company phone. Forced him to take some cash and
+      asked him to take a picture with me so at least I remember him. My Iphone,
+      I was sure had died so I had to stick with the android. Camera quality was
+      bad, but hey, this is what I got.
+    </p>
+    <p>
+      Finally managed to get home, filled with enormous stress and gratitude
+      simultaneously. Wanted to have some wine, get tipsy and sleep it off but I
+      had run out. Got out to go buy some, and all stores had closed at that
+      time resulting from the heavy rain. Sat down and wrote this with so much
+      tiredness.
+    </p>
+    <p>With respect, Life is Good.</p>
+    <p>E.B</p>
+  </div>
+</html>
