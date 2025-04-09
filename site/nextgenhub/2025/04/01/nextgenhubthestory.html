@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8" />
+  <style>
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #1c1c1c;
+        color: white;
+      }
+      .markdown-body table tr {
+        background-color: #1c1c1c;
+      }
+      .markdown-body table tr:nth-child(2n) {
+        background-color: black;
+      }
+    }
+  </style>
+
+  <link
+    rel="alternate"
+    type="application/rss+xml"
+    href="../../../../feed.xml"
+    title="The promise and challenges of crypto + AI applications"
+  />
+
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="../../../../css/common-vendor.b8ecfc406ac0b5f77a26.css"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="../../../../css/fretboard.f32f2a8d5293869f0195.css"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="../../../../css/pretty.0ae3265014f89d9850bf.css"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="../../../../css/pretty-vendor.83ac49e057c3eac4fce3.css"
+  />
+  <link rel="stylesheet" type="text/css" href="../../../../css/global.css" />
+  <link rel="stylesheet" type="text/css" href="../../../../css/misc.css" />
+
+  <script type="text/x-mathjax-config">
+    <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\(', '\)']]
+      },
+      svg: {
+        fontCache: 'global',
+      }
+    };
+  </script>
+  <script
+    type="text/javascript"
+    id="MathJax-script"
+    async
+    src="../../../../scripts/tex-svg.js"
+  ></script>
+
+  <style></style>
+
+  <div
+    id="doc"
+    class="container-fluid markdown-body comment-enabled"
+    data-hard-breaks="true"
+  >
+    <div id="color-mode-switch">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+        />
+      </svg>
+      <input type="checkbox" id="switch" />
+      <label for="switch">Dark Mode Toggle</label>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+        />
+      </svg>
+    </div>
+
+    <script type="text/javascript">
+      // Update root html class to set CSS colors
+      const toggleDarkMode = () => {
+        const root = document.querySelector("html");
+        root.classList.toggle("dark");
+      };
+
+      // Update local storage value for colorScheme
+      const toggleColorScheme = () => {
+        const colorScheme = localStorage.getItem("colorScheme");
+        if (colorScheme === "light")
+          localStorage.setItem("colorScheme", "dark");
+        else localStorage.setItem("colorScheme", "light");
+      };
+
+      // Set toggle input handler
+      const toggle = document.querySelector(
+        '#color-mode-switch input[type="checkbox"]'
+      );
+      if (toggle)
+        toggle.onclick = () => {
+          toggleDarkMode();
+          toggleColorScheme();
+        };
+
+      // Check for color scheme on init
+      const checkColorScheme = () => {
+        const colorScheme = localStorage.getItem("colorScheme");
+        // Default to light for first view
+        if (colorScheme === null || colorScheme === undefined)
+          localStorage.setItem("colorScheme", "light");
+        // If previously saved to dark, toggle switch and update colors
+        if (colorScheme === "dark") {
+          toggle.checked = true;
+          toggleDarkMode();
+        }
+      };
+      checkColorScheme();
+    </script>
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Magical Products With God-Complex" />
+
+    <br />
+    <h1 style="margin-bottom: 7px">NextGenHub- The Story</h1>
+    <small style="float: left; color: #888"> 2025 April 1st</small>
+    <small style="float: right; color: #888"
+      ><a href="../../../../index.html">See all posts</a></small
+    >
+    <br />
+    <br />
+    <br />
+
+    <p>
+      Never for a minute in my entire life entertained the idea of me being a
+      teacher at any point in my life. Teacher, growing up, was the career you
+      resort to when all hell breaks loose on you. Say you’d be a teacher in
+      class and you’d get laughed at so hard. Yet, some decades later, here I am
+      not only being a tutor but also leading other tutors to globalize their
+      impact. This is a quick story of how I decided to start working on
+      NextGenHub, how I am finding purpose in ways I never thought about before.
+      And what it took for me to get here.
+    </p>
+    <p>
+      Late 2021, 22 and 23. Those are some rough years right there. I walked
+      away from my full time job a year or two before to thread my own path.
+      Why? I didn’t know then. I just didn’t have any meaning. I was just doing
+      what I was being told to do. Looking back, and with the understanding I
+      have about myself now. I think I decided on that simply because it didn’t
+      fit my way of work. As I have grown, I have discovered that I have sort of
+      a fixed cognitive budget every day and translate to the entire year. It
+      runs out as I spend on things to think about. And so, I get to spend it on
+      urgent, important and high priority things every day. Now, in my day job,
+      I was spending this budget on mini-tasks. And the amount of tasks to be
+      done every day was almost unpredictable in a definite manner. Anyways,
+      that is a story for another day.
+    </p>
+    <p>
+      After some time of unemployment, I decided to explore entrepreneurship.
+      How hard could it be? I thought. My previous job was in the blockchain
+      (now web 3) space so it was quite obvious to me that the next venture
+      would have to be crypto–related because that is the industry I know inside
+      out. Although I didn’t know what specifically it would be yet. Still
+      exploring after some weeks, I remember, I jumped on a quick gig. That
+      required that I pay a colleague in Nigeria. I will share the details in a
+      post later (maybe), but long-story short, I ended up starting a fintech
+      company that enables cross-border payment between African countries by
+      utilizing stablecoins. Great idea, great opportunity. Less funding,
+      Suboptimal team execution, zero to no team conviction. It failed. The team
+      lost interest and most of them went on further academic pursuits.
+    </p>
+    <p>
+      First actual start up failure. I took some time to reflect on what went
+      wrong. At that moment I realized I needed something to hold on to. Some
+      sort of meaning to get me back to being a normal human. I could code. I
+      could write (somewhat), I had got some marketing certificates too. So how
+      about I go into the job market again. But this time, strictly a less
+      stressful and part–time role. I needed something that would not take less
+      than 2 hours to complete in a day so I could focus the rest of the day
+      thinking about what I wanted to do next. After some search, I discovered I
+      could be a home tutor. Perfect for my specifications. And how boring could
+      things possibly get if I am teaching kids. Stressful? Yes! But boring?
+      No!. Kids always have next questions!
+    </p>
+    <p>
+      I found a Ghanaian company and sent in my application. Afterwards, I took
+      my phone, tracked the founder on LinkedIn, and called his phone. Told him
+      about my intentions, my skillset and after a week, I was a tutor. A new
+      path I never thought I would come across.
+    </p>
+    <p>When The idea Clicked;</p>
+    <p>
+      The company I signed up with was only offering programming tutoring. Pay
+      was not that great. But I loved every bit of it. The first client I was
+      assigned to was a high achieving MOM of 3. She was the most kind-hearted,
+      driven and super involved in her kids education almost to an absurd
+      degree. I was tutoring her kids coding fundamentals and robotics. I didn’t
+      have the flexibility to decide with the parent what I wanted to teach to
+      the child. I was just handed a curriculum and I had to strictly go by it.
+      To be honest, it was all just scratch programming and dragging and
+      dropping stuff. I didn’t like that the kids couldn’t have a peek into how
+      real world programs were being made. So I would intentionally try and
+      finish as I had to teach for a session as early as I can, install vscode
+      and take them through some real world codes in the last 10-15 mins of the
+      class. It was not enough. But it was something. Essentially, all the
+      company focused on was lego robotics and scratch programming, and
+      sometimes a bit of electronics. While that was cool, I felt the students
+      needed to be immersed into things that were practical in the real world
+      and how codes were written. Not just playing around with scratch and lego
+      robotics, especially when A.I is on the rise and people are building Apps
+      with little to no coding skillls. It was a feeling. But I didn’t take it
+      too seriously.
+    </p>
+    <p>
+      One day, I came to this education-obsessed mom’s house to teach her kids
+      and she expressed to me how she got the reports from the tutoring company
+      I was working with and lamented about how she is not seeing any value for
+      what was being taught and how she wished we could teach her kids
+      programming in the real world so they can learn to build their own
+      websites and App in the real world. Let’s call her “Ms. Lady”. I told her,
+      I had already thought of this and that I would discuss with the Boss to
+      try and make changes in the curriculum. And I did.
+    </p>
+    <p>
+      Some weeks later, In my spare time, I built a website for her business.
+      Just as a christmas gift sort of, since she and her family had been really
+      nice to me and wanted to express my gratitude. She was so amazed and
+      excited when I showed it to her. We didn’t deploy that website. I had to
+      make a new one. Oh did I forget to tell you how much of a perfectionist
+      she is? She ended up contracting my software development company to build
+      a better and perfect one for her and another as her personal website. At a
+      cost of course.
+    </p>
+    <p>
+      After the website I made for her, she asked that I teach her kids to be
+      able to build such websites on their own atop of the regular scratch
+      tutoring I am doing with them. I was already doing it. This time, she
+      wanted to just pay me for it, and she wanted more than 15 mins class. Mind
+      you, before then, I had about 3 other students that I was teaching
+      programming. Extra students were a bit too much for me. So I contacted my
+      best friend who was also tech-savvy and ran him through a 1 week training
+      to take over the other students so I can just maintain 2 students.
+    </p>
+    <p>
+      After a couple of weeks, Ms. Perfectionist referred 4 more students from 1
+      family to me. Now, it wasn’t between me and my bestfriend anymore. I had
+      to get more tutors. So I did. Another parent also referred me to some
+      students that needed Maths tutoring assistance in preparation for their
+      exams. I loved Maths. But I thought I was the coding teacher and not
+      Maths. Anyways, I love Maths and I am good at it. I will teach Maths then.
+      What seemed to have been a side hobby to enable me to find meaning ended
+      up growing quicker a job. I got some friends of Mine to take up with some
+      students that came along the way that also wanted exams prep. At our peak
+      at that time, we had about 13 students who were either teaching coding or
+      prepping for international exams like SAT, IGCSE and NOVDEC. And I hadn’t
+      even registered as an actual company yet. I took payments through my
+      software company’s bank account. I got very busy very quickly.
+    </p>
+    <p>
+      Couple of Months later, the students that were prepping for the exams
+      wrote it, and that freed up my time. They were the majority of students
+      that we had. Their results also came back a couple of weeks before writing
+      this essay and most of them did way better than they did in school
+      learning for 4 years. Mind you, we taught them in only 4-5 months. I was
+      blown away by the impact we had on the lives of these students in such a
+      short period. But I also wondered why the teachers in school weren’t able
+      to help them pass their exams when they had 4 years to do so. I got the
+      answer; 1:1 tutoring is the difference. Students feel more connected to
+      teachers that way and they feel free to ask even the dumbest questions. In
+      a group classroom setting, there is a lot of status play and shyness.
+      Students aren’t able to be themselves. I saw a light at the end of the
+      tunnel. A feeling truly meaningful and confident. At that moment, I asked
+      myself; “What if I took this seriously, actually focused my time on it as
+      an actual start up? How many more kids could we impact?”. That was the
+      next chapter for me. I had to put everything aside and go all in on this.
+      But I want a cofounder. Someone that can connect with parents like I
+      can’t. Preferably female. Ms. Lady crossed my mind. But I thought she was
+      too busy with her interior design company that she would not be willing to
+      jump on with me. Although, I also was more convinced that with her being
+      obsessed with education, she could surprisingly agree to join me in a
+      flash. I will throw the idea to her and hear what she thinks.
+    </p>
+    <p>
+      At this time, I was still going to Ms. Lady’s house once a week to teach
+      her kids coding. One day after coding class, I walked to her and told her
+      what was on my mind. I can’t put into words how much she embraced the idea
+      and even further on went on to tell me about how she’s always had a dream
+      to build a school someday. Traditional education just focuses on academics
+      and she wants to build a unique system that builds kids into well-rounded
+      students. That, dear reader, is how NextGenHub started. We spent some days
+      discussing and agreeing on a brand name, registering the company, sharing
+      structure and that was it. We compliment each other effortlessly. She
+      brings on her high standards, marketing experience and business
+      management, while I focus on technology, and company operations.
+    </p>
+    <p>
+      We cleared up the entire system and rebuilt it from scratch making sure we
+      are providing parents with value beyond what they are even paying for and
+      raising the bar higher for competitors.
+    </p>
+    <p>
+      First off, Under no way was I going to allow us to pay our tutors the same
+      what my previous employer was paying. I would pay more. When we pay more,
+      we attract more qualified teachers and we wouldn’t need to spend so much
+      on training anymore.
+    </p>
+    <p>
+      Secondly, our tutoring services must transcend academics. I am a coder, I
+      like Maths, I drink wine, I play the piano, I play chess, I love art, and
+      I love literature. These are things that I only got exposed to at a later
+      stage in my life and I only got exposed to them because I am a nerd. We
+      are human. And humans feel, love, and do human stuff. I want us to not
+      only focus on academics but also arts, leadership, strategic thinking,
+      history, and anything else that would shape well-rounded figure grown-up
+      humans that not only are brilliant mathematicians or scientists, but also
+      appreciate arts, literature, emotional intelligence and love things deeply
+      to go all in on them. This is how NextGenHubGlobal.com begins, and unless
+      I die, or get acquired, I am going to be working on this for the next
+      decade! We connect kids with great tutors for 1:1 tutoring!
+    </p>
+    <p>With respect, Easy!</p>
+    <p>E.B</p>
+  </div>
+</html>

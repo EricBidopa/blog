@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8" />
+  <style>
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #1c1c1c;
+        color: white;
+      }
+      .markdown-body table tr {
+        background-color: #1c1c1c;
+      }
+      .markdown-body table tr:nth-child(2n) {
+        background-color: black;
+      }
+    }
+  </style>
+
+  <link
+    rel="alternate"
+    type="application/rss+xml"
+    href="../../../../feed.xml"
+    title="The promise and challenges of crypto + AI applications"
+  />
+
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="../../../../css/common-vendor.b8ecfc406ac0b5f77a26.css"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="../../../../css/fretboard.f32f2a8d5293869f0195.css"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="../../../../css/pretty.0ae3265014f89d9850bf.css"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="../../../../css/pretty-vendor.83ac49e057c3eac4fce3.css"
+  />
+  <link rel="stylesheet" type="text/css" href="../../../../css/global.css" />
+  <link rel="stylesheet" type="text/css" href="../../../../css/misc.css" />
+
+  <script type="text/x-mathjax-config">
+    <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\(', '\)']]
+      },
+      svg: {
+        fontCache: 'global',
+      }
+    };
+  </script>
+  <script
+    type="text/javascript"
+    id="MathJax-script"
+    async
+    src="../../../../scripts/tex-svg.js"
+  ></script>
+
+  <style></style>
+
+  <div
+    id="doc"
+    class="container-fluid markdown-body comment-enabled"
+    data-hard-breaks="true"
+  >
+    <div id="color-mode-switch">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+        />
+      </svg>
+      <input type="checkbox" id="switch" />
+      <label for="switch">Dark Mode Toggle</label>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+        />
+      </svg>
+    </div>
+
+    <script type="text/javascript">
+      // Update root html class to set CSS colors
+      const toggleDarkMode = () => {
+        const root = document.querySelector("html");
+        root.classList.toggle("dark");
+      };
+
+      // Update local storage value for colorScheme
+      const toggleColorScheme = () => {
+        const colorScheme = localStorage.getItem("colorScheme");
+        if (colorScheme === "light")
+          localStorage.setItem("colorScheme", "dark");
+        else localStorage.setItem("colorScheme", "light");
+      };
+
+      // Set toggle input handler
+      const toggle = document.querySelector(
+        '#color-mode-switch input[type="checkbox"]'
+      );
+      if (toggle)
+        toggle.onclick = () => {
+          toggleDarkMode();
+          toggleColorScheme();
+        };
+
+      // Check for color scheme on init
+      const checkColorScheme = () => {
+        const colorScheme = localStorage.getItem("colorScheme");
+        // Default to light for first view
+        if (colorScheme === null || colorScheme === undefined)
+          localStorage.setItem("colorScheme", "light");
+        // If previously saved to dark, toggle switch and update colors
+        if (colorScheme === "dark") {
+          toggle.checked = true;
+          toggleDarkMode();
+        }
+      };
+      checkColorScheme();
+    </script>
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Magical Products With God-Complex" />
+
+    <br />
+    <h1 style="margin-bottom: 7px">Die with a smile</h1>
+    <small style="float: left; color: #888"> 2024 March 20</small>
+    <small style="float: right; color: #888"
+      ><a href="../../../../index.html">See all posts</a></small
+    >
+    <br />
+    <br />
+    <br />
+
+    <p>
+      I don’t want to ever lose my smile. Maybe that is why I love spending time
+      with kids so much. They are just able to do absolutely dumb things and
+      still enjoy the beauty of it. It’s incredible!
+    </p>
+    <p>
+      I don’t want to ever lose the child in me. You know, the closest friends I
+      have are very few. And they happen to be way older than me. And when I
+      meet with any of them, we have a couple of drinks, wine, too many and
+      another, and another. And we just have so much fun! Sometimes we talk
+      about business, other times we don’t even know what we are talking about.
+      We are all drunk.. And it's some of the best times of my life!
+    </p>
+    <p>
+      But then I see people their age on the street, going about their day so
+      raw and too serious. Zero sense of humor! So dry! Almost as if they curse
+      every single day they wake and realize they're still alive. And Resent so
+      much getting themselves off the bed.
+    </p>
+    <p>
+      I look at them and I think to myself; Is this an age thing? Does life just
+      get so boring and dreadful as you grow up? If I have any choice in it, I
+      don’t want to turn into that as I get older.
+    </p>
+    <p>
+      I want to still be able to see the beauty in the little things. The simple
+      pleasures of life, you’d say. I want to laugh as hard as I can at good
+      jokes. I want to be able to do dumb things, realize they are dumb and
+      laugh at myself. In my old age, I want to still be able to connect with my
+      grandkids, understand their jokes, have fun with them, and crack jokes
+      with them. I want to laugh at jokes they make about me being in a
+      wheelchair! Of course the better not do too much, lest they get cut off
+      the trust fund. haha!
+    </p>
+    <p>
+      There is a beautiful old ghanaian movie that always is painted beautifully
+      at the back of my mind that I can’t quite confirm if I really watched or
+      was just a dream. It comes to mind whenever I think in this direction; A
+      father of 4 kids, on his dying bed with not more than 3 inhales left to
+      go. With his last breath, he whispered, “My daughters, come closer, I have
+      a secret to share. I hid gold at the center of the family farm. Please go
+      and share.” And with that, he passed away with a smile. They couldn’t
+      quite understand the smile. Yet they spent the next 1 year of their lives
+      digging the entire farm in search of the gold and found nothing. Ha! What
+      a legend! The kids burst into laughter when they realized it was a joke.
+      Old man’s last wish is for them to keep smiling and laughing. On my dying
+      bed, I want to be that man! Embrace death! Crack a joke! Make fun of my
+      own death. A life lived too long. I want to die with a smile!
+    </p>
+    <p>With respect, Easy!</p>
+    <p>E.B</p>
+  </div>
+</html>
