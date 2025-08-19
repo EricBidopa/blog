@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8" />
+  <style>
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #1c1c1c;
+        color: white;
+      }
+      .markdown-body table tr {
+        background-color: #1c1c1c;
+      }
+      .markdown-body table tr:nth-child(2n) {
+        background-color: black;
+      }
+    }
+  </style>
+
+  <link
+    rel="alternate"
+    type="application/rss+xml"
+    href="../../../../feed.xml"
+    title="The promise and challenges of crypto + AI applications"
+  />
+
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="../../../../css/common-vendor.b8ecfc406ac0b5f77a26.css"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="../../../../css/fretboard.f32f2a8d5293869f0195.css"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="../../../../css/pretty.0ae3265014f89d9850bf.css"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="../../../../css/pretty-vendor.83ac49e057c3eac4fce3.css"
+  />
+  <link rel="stylesheet" type="text/css" href="../../../../css/global.css" />
+  <link rel="stylesheet" type="text/css" href="../../../../css/misc.css" />
+
+  <script type="text/x-mathjax-config">
+    <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\(', '\)']]
+      },
+      svg: {
+        fontCache: 'global',
+      }
+    };
+  </script>
+  <script
+    type="text/javascript"
+    id="MathJax-script"
+    async
+    src="../../../../scripts/tex-svg.js"
+  ></script>
+
+  <style></style>
+
+  <div
+    id="doc"
+    class="container-fluid markdown-body comment-enabled"
+    data-hard-breaks="true"
+  >
+    <div id="color-mode-switch">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+        />
+      </svg>
+      <input type="checkbox" id="switch" />
+      <label for="switch">Dark Mode Toggle</label>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+        />
+      </svg>
+    </div>
+
+    <script type="text/javascript">
+      // Update root html class to set CSS colors
+      const toggleDarkMode = () => {
+        const root = document.querySelector("html");
+        root.classList.toggle("dark");
+      };
+
+      // Update local storage value for colorScheme
+      const toggleColorScheme = () => {
+        const colorScheme = localStorage.getItem("colorScheme");
+        if (colorScheme === "light")
+          localStorage.setItem("colorScheme", "dark");
+        else localStorage.setItem("colorScheme", "light");
+      };
+
+      // Set toggle input handler
+      const toggle = document.querySelector(
+        '#color-mode-switch input[type="checkbox"]'
+      );
+      if (toggle)
+        toggle.onclick = () => {
+          toggleDarkMode();
+          toggleColorScheme();
+        };
+
+      // Check for color scheme on init
+      const checkColorScheme = () => {
+        const colorScheme = localStorage.getItem("colorScheme");
+        // Default to light for first view
+        if (colorScheme === null || colorScheme === undefined)
+          localStorage.setItem("colorScheme", "light");
+        // If previously saved to dark, toggle switch and update colors
+        if (colorScheme === "dark") {
+          toggle.checked = true;
+          toggleDarkMode();
+        }
+      };
+      checkColorScheme();
+    </script>
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Magical Products With God-Complex" />
+
+    <br />
+    <h1 style="margin-bottom: 7px">Letter to Mrs. Penelope Brooke</h1>
+    <small style="float: left; color: #888"> 2025 August 19</small>
+    <small style="float: right; color: #888"
+      ><a href="../../../../index.html">See all posts</a></small
+    >
+    <br />
+    <br />
+    <br />
+
+    <p>Hello Pene,</p>
+    <p>
+      I trust this finds you well. You don’t know me, so below are some details
+      about me.
+    </p>
+    <p>
+      My name is Eric, based in Accra. I dropped out of university after my
+      first year to pursue software engineering (self-learning) and startups at
+      18. For the past 4 years, I have been here and there building software
+      startups across software edtech, fintech and proptech. I think I have
+      finally built something that I believe is truly impactful. Check it out
+      <a href="www.fasuaglobal.com" target="_blank">here</a> (fasuaglobal.com),
+      helping children learn maths easily.
+    </p>
+    <p>
+      Plot twist – I am not asking for employment or trying to pitch you
+      (although I wouldn’t mind). I rather, want to join ACTT school on a
+      scholarship if you’d be so kind as to accommodate me. Specifically the
+      woodwork and joinery multi-months program.
+    </p>
+    <p>
+      Why scholarship? Well, I am living hand to mouth basically. I earn just
+      enough to go by and not any extra to spend on education. My rent is due
+      soon and Landlord’s take 2 years advance these days and even with me being
+      self-employed building websites for other companies every now and then to
+      go by, it is very tough to have extra for anything. So let’s just say I am
+      not too good on the financial side right now. But I am willing to dedicate
+      and put in my best to learn the woodwork craft.
+    </p>
+    <p>
+      Ofcouse, from one business person to the other, In return, I would also be
+      more than willing to take over your institute’s website, manage it, and
+      handle any technical changes that may be required. Plus, If need be, I can
+      start working on an App for you and contribute my skills in any way to
+      position ACTT at the forefront of innovation. And that is not all. This
+      leads to the “Why Woodwork?” Question, which I have thought long and hard
+      about.
+    </p>
+    <p>
+      You see, I have always been interested in furniture. Specifically the more
+      classical and antique ones. I was raised by my grandmother in the eastern
+      region before moving to Accra and I appreciated the timeless furniture all
+      around her house. I think the world is slowly fading them away and I would
+      like to help preserve that. After school, my plan is to go the
+      self-employed route and combine my software skills to establish a modern
+      furniture company with modern technology. A.I, Augmented reality and the
+      likes. You have my word. I will do exactly that if you give me this
+      opportunity. A gentleman’s word. So maybe, if all goes well and I don’t
+      die, an extra return on your scholarship investment will be me providing
+      employment opportunities for a lot of my peer graduates which would also
+      align with your mission a lot. Thank you for taking the time to read this.
+      I tried to keep it as succinct as I could. Looking forward to hearing from
+      you.
+    </p>
+    <p>Regards</p>
+    <p>E.B</p>
+  </div>
+</html>
